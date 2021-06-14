@@ -7,7 +7,10 @@
   - [Screenshots](#screenshots)
 
 <hr>
+
+
 # Web Application Assignment
+
 
 A group assignments that aims to learn and understand:
 
