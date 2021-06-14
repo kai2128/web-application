@@ -38,22 +38,22 @@ Function:
 
 ## Screenshots
 
-![signup](README/signup.png)
+![signup](Screenshots/signup.png)
 
-![login](README/login.png)
+![login](Screenshots/login.png)
 
-![home](README/home.png)
+![home](Screenshots/home.png)
 
-![cart](README/cart.png)
+![cart](Screenshots/cart.png)
 
-![checkout](README/checkout.png)
+![checkout](Screenshots/checkout.png)
 
-![item](README/item.png)
+![item](Screenshots/item.png)
 
-![order](README/order.png)
+![order](Screenshots/order.png)
 
-![admin](README/admin.png)
+![admin](Screenshots/admin.png)
 
-![blog](README/blog.png)
+![blog](Screenshots/blog.png)
 
-![blog1](README/blog1.png)
+![blog1](Screenshots/blog1.png)
