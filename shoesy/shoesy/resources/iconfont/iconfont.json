@@ -1,0 +1,86 @@
+{
+  "id": "2372638",
+  "name": "wad",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1117099",
+      "name": "link",
+      "font_class": "link",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1203657",
+      "name": "instagram",
+      "font_class": "instagram",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14343615",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "18253059",
+      "name": "Twitter",
+      "font_class": "tuite",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "8327184",
+      "name": "user",
+      "font_class": "user1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "142334",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e97b",
+      "unicode_decimal": 59771
+    },
+    {
+      "icon_id": "431676",
+      "name": "cross",
+      "font_class": "cross",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "2966198",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "5700816",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7335620",
+      "name": "过滤",
+      "font_class": "guolv",
+      "unicode": "eb44",
+      "unicode_decimal": 60228
+    },
+    {
+      "icon_id": "7629045",
+      "name": "返回",
+      "font_class": "fanhui1",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    }
+  ]
+}

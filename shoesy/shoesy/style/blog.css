@@ -1,0 +1,107 @@
+.content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#blogPage{
+    margin: 20px auto 0 auto;
+    display: block;
+    width: 90vw;
+    background-color: white;
+}
+
+.blogTitle {
+    display: block;
+    width: 88vw;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1vw;
+}
+
+.image {
+    position: relative;
+    display: block;
+    padding: 1vw;
+    object-fit: cover;
+    height: 44vw;
+    width: 88vw;
+}
+
+.image img{
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    height: 44vw;
+    width: 88vw;
+}
+
+.blogCaption {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+    padding: 1vw;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+}
+
+.blogContentBox {
+    margin: 1vw;
+    padding: 1vw;
+    text-align: justify;
+    font-size: 20px
+
+}
+
+.blogContentBox .sec {
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+.blogContentBox .words{
+    font-size: 1vw;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.blogContentBox .media{
+    display: block;
+    object-fit: cover;
+    height: 43vw;
+    width: 86vw;
+}
+
+.socialmediabutton{
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    width: 86vw;
+    justify-content: space-evenly;
+}
+
+.socialmediabutton a{
+    display: flex;
+    width: 15vw;
+    background-color: white;
+    justify-content: center;
+}
+
+.socialmediabutton a:hover{
+    background-color: whitesmoke;
+}
+
+.socialmediabutton a img{
+    padding: 1vw;
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
+}
+

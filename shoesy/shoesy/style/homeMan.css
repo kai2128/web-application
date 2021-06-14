@@ -1,0 +1,18 @@
+.shopnow{
+    color: rgb(135,206,250);
+}
+
+.shopnow:hover{
+    background-color: rgb(135,206,250);
+}
+
+#dashboardPage .sideFilter #filterBtn,
+#dashboardPage .sideFilter #resetButton{
+    border: 3px solid rgb(135,206,250);
+    color: rgb(135,206,250);
+}
+
+#dashboardPage .sideFilter #filterBtn:hover,
+#dashboardPage .sideFilter #resetButton:hover{
+    background-color: rgb(135,206,250);
+}

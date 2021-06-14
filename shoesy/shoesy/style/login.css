@@ -1,0 +1,191 @@
+body{
+    background:  linear-gradient(0deg, hsla(180, 24%, 87%,.9), hsla(4, 100%, 94%, 0.5)),  url("../resources/icon/white-icon.svg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
+}
+
+a:hover{
+    color: var(--a-hover-color);
+}
+
+a:active{
+    color: var(--a-active-color);
+}
+
+/*to align and justify center*/
+.loginBox{
+    display: grid;
+    height: 100%;
+}
+
+#loginPage{
+    justify-self: center;
+    align-self: center;
+    padding: 10px 50px 50px;
+    background-color: var(--box-background-color);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+
+#loginPage .loginAsGuest a:first-child{
+    margin-bottom: 0;
+    position: relative;
+    right: -264px;
+    bottom: -5px;
+    color: black;
+    font-size: 30px;
+}
+
+#loginPage .loginAsGuest a:first-child:hover{
+    color: hsl(0, 60%, 54%);
+}
+
+#loginPage .loginAsGuest a:first-child:active{
+    color: hsl(0, 47%, 44%);
+}
+
+
+#loginPage .loginAsGuest .tooltipText{
+    white-space: nowrap;
+    visibility: hidden;
+    position: absolute;
+    right: -83px;
+    top: -37px;
+    padding: 5px 10px;
+    width: auto;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    text-align: center;
+}
+
+#loginPage .loginAsGuest .tooltipText::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#loginPage .loginAsGuest a:first-child:hover .tooltipText{
+    visibility:visible;
+}
+#loginPage .signUpForm .backButton{
+    font-size: 30px;
+    position: absolute;
+    left: 74px;
+    /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);;*/
+    height: auto;
+    width: 40px;
+    text-align: center;
+    border: 1px solid var(--a-color);
+    border-radius: 100%;
+    transition: var(--hover-transition);
+}
+
+#loginPage h1{
+    display: flex;
+    justify-content: center;
+}
+
+#loginPage .loginForm {
+    margin-top: 10px;
+}
+
+
+#loginPage .loginForm [class*="input"],
+#loginPage .signUpForm [class*="signUp"]
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loginPage .loginForm [class*="input"] input,
+#loginPage .signUpForm [class*="signUp"] input
+{
+    border: 0;
+    padding: 10px 20px;
+    width: 295px;
+    border-bottom: var(--textbox-bottom-border);
+    background-color: var(--textbox-background);
+}
+
+#loginPage .loginForm [class*="input"] svg
+{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+#loginPage .signUpForm [class*="signUp"] span{
+    font-family: var(--font-light);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#loginPage .loginForm .loginBottom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loginPage .loginForm .loginBottom span{
+    display: flex;
+    align-items: center;
+}
+
+#loginPage .signUpForm .signUpButton{
+    display: flex;
+    justify-content: center;
+}
+
+#loginPage .loginForm .loginButton,
+#loginPage .signUpForm .signUpButton {
+    font-size: 27px;
+    border: 0;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    background-image: var(--button-gradient-background);
+    transition: none;
+}
+
+#loginPage .loginForm .loginButton:hover,
+#loginPage .signUpForm .signUpButton:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#loginPage .loginForm .loginButton:active,
+#loginPage .signUpForm .signUpButton:active{
+    background-image: var(--button-active-gradient-background);
+}
+
+#loginPage .loginForm .loginButton:visited,
+#loginPage .loginForm .loginButton:focus,
+#loginPage .signUpForm .signUpButton:visited,
+#loginPage .signUpForm .signUpButton:focus {
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,114 @@
+/*normalize*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+
+body{
+    background: linear-gradient(to right, rgba(99,111,164,.78), rgba(232,203,192,.78)), url("../resources/image/logo1.png") no-repeat center;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #5969D4;
+    transition: all ease-in-out;
+}
+
+a:hover{
+    color: #6B9EB5;
+}
+
+a:active{
+    color: #22568D;
+}
+
+
+h1{
+    align-self: flex-start;
+}
+
+.content{
+    position: relative;
+    margin: 20px auto 5px auto;
+    width: 1200px;
+}
+
+.loginBox{
+    background-color: rgba(233, 237, 243, 0.7);
+    backdrop-filter: blur(.7);
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    min-width: 320px;
+    padding-bottom: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+form{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.fa{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+label{
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+button{
+    border: none;
+    color: white;
+    border-radius: 0.25rem;
+    background: rgb(96, 165, 250);
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    width: 20%;
+    font-weight: 700;
+    align-self: center;
+    outline: none;
+    transition: all ease-in-out;
+}
+
+button:hover,
+button:active
+{
+    background: rgb(58, 99, 146);
+}
+
+input{
+    width: 80%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #e5e7eb;
+}
+
+.inlineItem{
+    text-transform: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}

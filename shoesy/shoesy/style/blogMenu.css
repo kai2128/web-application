@@ -1,0 +1,92 @@
+.content{
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.blogGrid{
+    background-color: black;
+    margin: 1vw;
+    width: 30vw;
+    height: 65vh;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.blogGrid .blogImg{
+    position: absolute;
+    width: 30vw;
+    height: 65vh;
+}
+
+.blogGrid .blogImg img{
+    position: absolute;
+    width: 30vw;
+    height: 65vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.blogGrid .blogAuthor,
+.blogGrid .blogDate,
+.blogGrid .category{
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    display: block;
+    width: 30vw;
+}
+
+.blogGrid .blogAuthor{
+    position: absolute;
+    top: 25vh;
+}
+
+.blogGrid .blogDate{
+    position: absolute;
+    top: 30vh;
+}
+
+.blogGrid .category{
+    position: absolute;
+    top: 15vh;
+}
+
+.blogGrid .blogShortIntro{
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    display: block;
+    width: 26vw;
+    height: 20vh;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    margin: 1vw;
+    padding: 1vw;
+    position: absolute;
+    top: 35vh;
+    text-align: justify;
+    letter-spacing: 0vw;
+}
+
+.blogGrid .blogTitle{
+    display: block;
+    width: 30vw;
+    position: absolute;
+    top: 5vh;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    height: 5vw;
+}

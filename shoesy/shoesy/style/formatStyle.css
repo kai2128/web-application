@@ -1,0 +1,244 @@
+/*define variable and font*/
+
+@font-face {
+    font-family: 'myFont';
+    src: url("../resources/font/CooperHewitt-Medium.eot");
+    src: url("../resources/font/CooperHewitt-Medium.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "myFontLight";
+    src: url("../resources/font/CooperHewitt-Book.eot");
+    src: url("../resources/font/CooperHewitt-Book.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --a-color : #5969d4;
+    --a-hover-color : #6b9eb5;
+    --a-active-color : #22568d;
+
+    --box-background-color: hsla(200, 5%, 88%, 0.85);
+
+    --textbox-background: hsla(210, 10%, 96%, 0.95);
+    --textbox-bottom-border: 1px solid black;
+
+    --button-background: #grey;
+    --button-text-color: #404040;
+    --button-border: 1px solid #e7e7e7;
+    --button-box-shadow: 0 6px 10px 0 #e7e7e7;
+    --button-hover-color: hsl(235, 100%, 98%);
+    --button-hover-text-color: #fdfdfd;
+    --button-active-color: #585a79;
+    --button-gradient-background: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    --button-active-gradient-background: linear-gradient(to right, #243949 0%, #28485b 100%);
+
+    --font-text : 'myFont', Helvetica, sans-serif;
+    --font-light :'myFontLight', Helvetica, sans-serif;
+    --font-helvatica: Helvetica, Arial, sans-serif;
+    --highlightblue-text-color : hsl(246, 70%, 55%);
+    --light-text-color: rgb(129, 135, 146);
+    --light-icon-color: rgb(178, 178, 186);
+    --hover-icon-box-shadow: 0 3px 9px rgba(115,202,240,0.9), 0 5px 5px rgba(151,243,245,0.8);
+    --hover-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --hover-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+/*for iconfont(ignore)*/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text) ;
+    box-sizing: border-box;
+}
+
+/*a general style*/
+a {
+    text-decoration: none;
+    color: var(--a-color);
+}
+
+a:hover{
+    color: var(--a-hover-color);
+}
+
+a:active{
+    color: var(--a-active-color);
+}
+
+.flexBox{
+    display: flex;
+}
+
+.flexSB{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*brand icon style*/
+.brandIcon{
+    width: 200px;
+    height: 200px;
+}
+
+.Nike{
+    background: url("../resources/icon/Nike_logo.svg") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.Adidas{
+    background: url("../resources/icon/Adidas_Logo.svg") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.Puma{
+    background: url("../resources/icon/Puma_logo.svg") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.Asics{
+    background: url("../resources/icon/Asics_Logo.svg") center no-repeat;
+    background-size: 100% 100%;
+}
+.NewBalance{
+    background: url("../resources/icon/New_Balance_logo.svg") center no-repeat;
+    background-size: 100% 100%;
+    filter: saturate(0%) brightness(0%);
+}
+
+/*general button style*/
+*[class$=Button],
+button{
+    /*height: 1em;*/
+    /*width: 1em;*/
+    border: var(--button-border);
+    color: var(--button-text-color);
+    background: var(--button-background);
+    box-shadow: var(--button-box-shadow);
+    font-size: 12px;
+}
+
+*[class$=Button]:hover,
+button:hover
+{
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    /*color:  var(--button-hover-text-color);*/
+    backdrop-filter: blur(10px);
+}
+
+*[class$=Button]:active,
+button:active
+{
+    background: var(--button-active-color);
+    color: #e9e9e9;
+}
+
+*[class$=Button]:focus,*[class$=Button]:active,
+button:focus, button:active{
+    border: none;
+    outline: none;
+}
+
+/*selection button style*/
+.selectionButton{
+    display: flex;
+    flex-basis: 80px;
+    flex-wrap: wrap;
+    font-family: var(--font-helvatica);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background: none;
+    border: 1px solid var(--light-text-color);
+}
+
+.selectionButton:hover{
+    border: 2px solid var(--highlightblue-text-color);
+    color: var(--highlightblue-text-color);
+    background: none;
+}
+
+.selectionButton:active{
+    border: 2px solid var(--highlightblue-text-color);
+    color: var(--highlightblue-text-color);
+    background: none;
+}
+
+.selectionButton:focus{
+    border: 2px solid var(--highlightblue-text-color);
+    color: var(--highlightblue-text-color);
+    outline: none;
+}
+
+/*item box style*/
+.itemDetails{
+    border: 1px solid #eeeeee;
+    height: 350px;
+    width: 250px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.itemDetails:hover{
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.itemDetails img{
+    align-self: center;
+    min-height: 187px;
+    min-width: 187px;
+    max-width: 187px;
+    max-height: 187px;
+    object-fit: cover;
+}
+
+.itemDetails span{
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+
+}
+
+.itemDetails .itemName{
+    display: block;
+    height: 54px;
+    max-height: 54px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemDetails .itemBrand{
+    font-size: medium;
+    color: var(--light-text-color);
+}
+
+.itemDetails .itemPrice{
+    font-size: 25px;
+    color: var(--highlightblue-text-color);
+}
+
+

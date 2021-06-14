@@ -1,0 +1,142 @@
+
+.content{
+    margin: 0px auto 0px auto;
+    justify-content: space-evenly;
+    width: 90vw;
+    padding: 20px 0 20px 0;
+    min-height: 100vh;
+}
+
+.eachitem{
+    display: block;
+    background-color: lightcyan;
+    border-bottom: 1px solid darkgray;
+    height: 20vh;
+}
+
+.image{
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+}
+
+.image img{
+    display: inline-block;
+    height: 10vw;
+    width: 10vw;
+    background-color: transparent;
+}
+
+.details{
+    position: absolute;
+    display: inline-block;
+}
+
+.name{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    font-weight: bold;
+    font-size: 1.2vw;
+    display: inline-block;
+    width: 50vw;
+}
+
+.gender,
+.size{
+    display: inline-block;
+    width: 10vw;
+    font-size: 1vw;
+}
+
+.eachitem form{
+    margin-left: 1vw;
+    display: block;
+    margin-top: 2vh;
+}
+
+.rate{
+    text-align: center;
+    width: 5vw;
+    border: none;
+    padding: 1vh 1vw 1vh 1vw;
+    color: black;
+    background-color: white;
+}
+
+.comment{
+    margin-left: 2vw;
+    width: 30vw;
+    border: none;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.review{
+    border: 3px solid yellowgreen;
+    background-color: white;
+    color: yellowgreen;
+    padding: 1vh 1vw 1vh 1vw;
+    margin-left: 2vw;
+    font-size: 1vw;
+    width: 20vw;
+}
+
+.review:disabled,
+.review:disabled:hover{
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
+}
+
+.review:hover{
+    color: white;
+    font-weight: bold;
+    background-color: yellowgreen;
+}
+
+.eachitem .minus,
+.eachitem .add{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.eachitem .minus{
+    color:red;
+}
+
+.eachitem .minus:hover{
+    background-color: red;
+    color: white;
+}
+
+.eachitem .add{
+    color: yellowgreen;
+}
+
+.eachitem .add:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+#receive{
+    margin-top: 5vh;
+    border: 3px solid yellowgreen;
+    width: 90vw;
+    justify-content: center;
+    display: block;
+    color: yellowgreen;
+    font-size: 1.2vw;
+    background-color: white;
+}
+
+#receive:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+}

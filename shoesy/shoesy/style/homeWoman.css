@@ -1,0 +1,18 @@
+.shopnow{
+    color: pink;
+}
+
+.shopnow:hover{
+    background-color: pink;
+}
+
+#dashboardPage .sideFilter #filterBtn,
+#dashboardPage .sideFilter #resetButton{
+    border: 3px solid pink;
+    color: pink;
+}
+
+#dashboardPage .sideFilter #filterBtn:hover,
+#dashboardPage .sideFilter #resetButton:hover{
+    background-color: pink;
+}

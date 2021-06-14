@@ -1,0 +1,12 @@
+.category{
+    border: 3px solid rgb(135,206,250);
+}
+
+.categoryName{
+    color: rgb(135,206,250);
+}
+
+.categoryName:hover,
+.question:hover{
+    background-color: lightcyan;
+}

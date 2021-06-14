@@ -1,0 +1,138 @@
+.content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 200vh;
+    display: flex;
+}
+
+.image img{
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+}
+
+.image .banner{
+    position: absolute;
+    top: 10vh;
+    left: 32vw;
+    width: 40vw;
+    letter-spacing: 0.5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+    color: whitesmoke;
+}
+
+.image .section1,
+.image .section2,
+.image .section3,
+.image .section4{
+    left: 32vw;
+    width: 37vw;
+    color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 1vw;
+    padding: 1vw;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.image .section1{ 
+    position: absolute;
+    top: 30vh;
+}
+
+.image .section2{ 
+    position: absolute;
+    top: 45vh;
+}
+
+.image .section3{ 
+    position: absolute;
+    top: 60vh;
+}
+
+.image .section4{ 
+    position: absolute;
+    top: 78vh;
+}
+
+.image .message{
+    display: block;
+    position: absolute;
+    top: 100vh;
+    left: 32vw;
+    padding: 1vw;
+    width: 37vw;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.image .message .banner1{
+    display: block;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.image form label{
+    margin-top: 2vh;
+    display: block;
+    width: 10vw;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.image form input[type=text]{
+    display: block;
+    width: 35vw;
+    border: 2px solid gray;
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+.image form textarea{
+    display: block;
+    width: 35vw;
+    height: 30vh;
+    border: 2px solid gray;
+    padding: 1vw;
+    font-size: 1vw;
+    resize: none;
+}
+
+.image form input[type=submit]{
+    margin-top: 2vh;
+    display: block;
+    width: 37.3vw;
+    border: 3px solid yellowgreen;
+    padding: 1vh 1vw;
+    font-size: 1vw;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.image form input[type=submit]:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.image form input[type=submit]:disabled,
+.image form input[type=submit]:disabled:hover{
+    background-color: transparent;
+    color: transparent;
+    border: 3px solid transparent;
+    cursor: default;
+}

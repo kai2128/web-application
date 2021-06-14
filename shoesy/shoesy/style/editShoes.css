@@ -1,0 +1,316 @@
+.content{
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    width: 90vw;
+    padding: 20px 0 20px 0;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBanner,
+.editBanner{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.addBanner:hover .addBar h1,
+.editBanner:hover .editBar h1{
+    color: white;
+}
+
+.addBanner:hover .image img,
+.editBanner:hover .image img{
+    opacity: 0.7;
+}
+
+.addBanner .image,
+.editBanner .image{
+    background-color: gray;
+    height: 65vh;
+    width: 44vw;
+}
+
+.addBanner .image img,
+.editBanner .image img{
+    position: relative;
+    height: 65vh;
+    width: 44vw;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.addBanner .addBar,
+.editBanner .editBar{
+    position: absolute;
+    top: 15vw;
+    left: 5vw;
+}
+
+.addBanner .addBar h1,
+.editBanner .editBar h1{
+    width: 35vw;
+    text-align: left;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+}
+
+.form{
+    padding: 1vw;
+    display: none;
+    width: 88vw;
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.form form label{
+    margin-top: 1vh;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form form img{
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    color: white;
+}
+
+#id_form,
+#year_form,
+#price_form,
+#discount_form{
+    display: flex;
+    border: none;
+    font-family: 'Poppins';
+    padding: 1vw;
+    width: 10vw;
+    background-color: white;
+}
+
+.form form .chooseImage{
+    width: 12vw;
+    display: inline-flex;
+    font-weight: normal;
+    font-size: 0.8rem;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.form form .imageName:disabled{
+    display: inline-flex;
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: red;
+    border: none;
+    background-color: transparent;
+}
+
+#name_form{
+    resize: none;
+    width: 86vw;
+    height: 3vh;
+    display: flex;
+    border: none;
+    font-family: 'Poppins';
+    padding: 1vw;
+}
+
+#brand_form,
+#category_form{
+    display: flex;
+    border: none;
+    font-family: 'Poppins';
+    padding: 1vw;
+    width: 12vw;
+}
+
+#description_form{
+    resize: none;
+    width: 86vw;
+    height: 10vh;
+    display: flex;
+    border: none;
+    font-family: 'Poppins';
+    padding: 1vw;
+}
+
+.form form .radioboxLabel input[type=radio],
+.form form .checkboxLabel input[type=checkbox]{
+    height: 3vh;
+    width: 3vw;
+}
+
+.form form .radioboxLabel,
+.form form .checkboxLabel{
+    display: inline-flex;
+    width: 10vw;
+    font-weight: normal;
+}
+
+.form form div{
+    width: 88vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cancel_form{
+    padding: 0.5vw 1vw;
+    margin: 2vh 0vw 0vw 1vw;
+    width: 15vw;
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+#cancel_form:hover{
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+#submit_form{
+    padding: 0.5vw 1vw;
+    margin: 2vh 0vw 0vw 1vw;
+    width: 15vw;
+    border: 2px solid yellowgreen;
+    color: yellowgreen;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+#submit_form:hover{
+    color: white;
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+#submit_form:disabled,
+#submit_form:disabled:hover{
+    color: lightgray;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+#name_form::placeholder,
+#description_form::placeholder,
+#price_form::placeholder,
+#discount_form::placeholder{
+    color: rgb(255, 0, 0, 0.5);
+    font-size: 0.7rem;
+}
+
+.showForm{
+    display: flex;
+}
+
+.delete_form{
+    display: none;
+}
+
+.allShoes{
+    margin-top: 40px;
+    display: inline-flex;
+    width: 90vw;
+    font-size: 1rem;
+}
+
+.allShoes table,th,td{
+    border-collapse: collapse;
+}
+
+.allShoes table th{
+    background-color: darkgray;
+    color: white;
+    text-align: left;
+}
+
+.allShoes table tr{
+    background-color: white;
+    border-bottom: 1px solid darkgray;
+}
+
+.allShoes table tr:hover{
+    background-color: whitesmoke;
+}
+
+.allShoes table tr th:nth-child(5),
+.allShoes table tr th:nth-child(6){
+    text-align: right;
+}
+.shoeNo{
+    width: 3vw;
+}
+
+.shoeId{
+    width: 10vw;
+}
+
+.shoeId div{
+    font-family: 'Consolas';
+}
+
+.name{
+    width: 30vw;
+}
+
+.name div{
+    width: 25vw;
+    word-wrap: break-word;
+}
+
+.gender{
+    width: 5vw;
+}
+
+.price{
+    width: 10vw;
+    text-align: right;
+}
+
+.discount{
+    width: 10vw;
+    text-align: right;
+}
+
+.edit{
+    text-align: center;
+    width: 10vw;
+    font-weight: bold;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.delete{
+    text-align: center;
+    width: 10vw;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.delete:hover{
+    background-color: red;
+    color: white;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,128 @@
+
+.content{
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.search{
+    position: relative;
+}
+
+.image{
+    background-color: gray;
+    height: 72.5vh;
+    width: 100%;
+}
+
+.image img{
+    position: relative;
+    height: 72.5vh;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+.searchBar h1{
+    width: 80vw;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5vw;
+    font-size: 5vw;
+    display: block;
+    position: absolute;
+    top: 5vw;
+}
+
+#search{
+    display: block;
+    padding: 10px;
+    width: 60vw;
+    text-align: center;
+    font-size: 1vw;
+    border: 2px  solid lightgray;
+    border-radius: 10px;
+    position: absolute;
+    top: 20vw;
+}
+
+#search::placeholder{
+    color: lightgray;
+}
+
+.faq{
+    margin: 50px 4vw 0 4vw ;
+    width: 90vw;
+    font-family: 'Poppins';
+}
+
+.category{
+    width: 90vw;
+    margin-top: 1vh;
+    background-color: white;
+    border: 3px solid darkgray;
+    cursor: pointer;
+}
+
+.categoryName{
+    display: flex;
+    padding: 1vw;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: darkgray;
+    justify-content: space-between;
+}
+
+.categoryName label{
+    color: darkgray;
+    cursor: pointer;
+}
+
+.categoryName:hover,
+.question:hover{
+    background-color: whitesmoke;
+}
+
+.allQuestions{
+    display: none;
+}
+
+.question{
+    display: inline-flex;
+    padding: 1vw;
+    width: 88vw;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.question label{
+    color: lightgray;
+}
+
+.answer{
+    display: none;
+    padding: 1vw;
+    padding-top: 0vw;
+    width: 88vw;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.toggleAnswer{
+    display: flex;
+}
+
+.toggleQuestion{
+    display: block;
+}

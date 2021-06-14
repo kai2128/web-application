@@ -1,0 +1,217 @@
+
+.content{
+    margin: 0px auto 0px auto;
+    width: 90vw;
+    padding: 20px 0 20px 0;
+    min-height: 100vh;
+}
+
+.productDetailBox{
+    display: block;
+    background-color: white;
+}
+
+.productDetailBox .productDetailUpper{
+    display: flex;
+}
+
+.productDetailBox .productDetailUpper .productImgBox img{
+    object-fit: cover;
+    height: 20vw;
+    width: 20vw;
+}
+
+.productDetailBox .productDetailUpper .productDetail{
+    display: block;
+    flex-direction: column;
+    width: 70vw;
+    padding: 1vw;
+}
+
+.productDetailBox .productDetailUpper .productDetail .name{
+    display: block;
+    width: 65vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.productDetailBox .productDetailUpper .productDetail .brand,
+.productDetailBox .productDetailUpper .productDetail .category{
+    display: block;
+    width: 10vw;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.productDetailBox .productDetailUpper .productDetail .productPrice{
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.productDetailBox .productDetailUpper .productDetail .discount{
+    font-weight: bold;
+    font-size: 1vw;
+    color: yellowgreen;
+}
+
+.productDetailBox .productDetailUpper .productDetail .productSizeBox .sizeSelection .sizeBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 68vw;
+}
+
+.productDetailBox .productDetailUpper .productDetail .productSizeBox .sideTitle,
+.productDetailBox .productDetailUpper .productDetail .quantityBox .sideTitle,
+.productDetailBox .productDetailUpper .productDetail .descriptionBox .sideTitle,
+.productDetailBox .productDetailUpper .productDetail .deliveryBox .sideTitle,
+.productDetailBox .productDetailUpper .productDetail .returnPolicyBox .sideTitle{
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+.productDetailBox .productDetailUpper .productDetail .descriptionBox .description,
+.productDetailBox .productDetailUpper .productDetail .deliveryBox .deliveryType,
+.productDetailBox .productDetailUpper .productDetail .returnPolicyBox .returnContent{
+    text-align: justify;
+    width: 65vw;
+}
+
+.productDetailBox .productDetailUpper .productDetail .productSizeBox .productSize{
+    font-size: 1vw;
+    padding: 1vw;
+    background-color: whitesmoke;
+    border: none;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+/*selection button style*/
+.selectionButton{
+    display: flex;
+    flex-basis: 10vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.selectionButton:hover{
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+/*used to set selected button style important!! */
+.selected{
+    background-color: darkgray !important;
+    color: white !important;
+    font-weight: bold !important;
+    outline: none;
+}
+
+.productDetailBox .productDetailUpper .productDetail .productSizeBox .productSize:active{
+    background-color: lightgray;
+    font-weight: bold;
+    color: white;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection{
+    display: flex;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .minus,
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .add{
+    display: flex;
+    width: 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .minus{
+    color: red;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .add{
+    color: yellowgreen;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .minus:hover{
+    color: white;
+    background-color: red;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection .add:hover{
+    color: white;
+    background-color: yellowgreen;
+}
+
+.productDetailBox .productDetailUpper .productDetail .quantityBox .quantitySelection input{
+    display: flex;
+    width: 5vw;
+    text-align: center;
+    font-size: 1vw;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.productDetailBox .productDetailUpper .productDetail .selection{
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+}
+
+.productDetailBox .productDetailUpper .productDetail .buyButton,
+.productDetailBox .productDetailUpper .productDetail .addButton{
+    width: 20vw;
+    font-size: 1vw;
+    border: 3px solid yellowgreen;
+    background-color: white;
+    color: yellowgreen;
+    padding: 1vw;
+    margin-top: 5vh;
+    display: block;
+    cursor: pointer;
+}
+
+.productDetailBox .productDetailUpper .productDetail .buyButton:hover,
+.productDetailBox .productDetailUpper .productDetail .addButton:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.productReview{
+    display: block;
+    background-color: white;
+    width: 88vw;
+    padding: 1vw;
+}
+
+.productReview .review{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.productReview .rate{
+    display: inline-block;
+    width: 5vw;
+    font-size: 1vw;
+}
+
+.productReview .comment{
+    display: inline-block;
+    font-size: 1vw;
+    width: 80vw;
+}
+
+.productReview .reviewBox{
+    background-color: white;
+}
+

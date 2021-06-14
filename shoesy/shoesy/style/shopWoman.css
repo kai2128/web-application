@@ -1,0 +1,26 @@
+  .addcart,
+  .moreorder{
+    color: pink;
+    border: 3px solid pink;
+  }
+  
+  .yourcart,
+  .morecart,
+  .yourorder{
+    color: pink;
+    border: 3px solid pink;
+  }
+
+  .addcart:hover,
+  .morecart:hover,
+  .moreorder:hover{
+    background-color: pink;
+  }
+  
+  .cart .item{
+    background-color: rgb(255, 235, 235);
+  }
+
+  .eachorder{
+    border: 3px solid pink;
+  }
